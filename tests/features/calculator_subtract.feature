@@ -1,4 +1,5 @@
-Feature: Now Let's Test!
+Feature: cceptance Test for the
+  subtract() function of Calculator
  
   Background:
     Given I am using the calculator
