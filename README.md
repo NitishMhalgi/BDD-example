@@ -4,8 +4,8 @@
 
 2. Install the Lettuce library and nose toolkit for Python. (These are Python-based tools for Behavior Driven development.)
 	For Mac & Linux: You can simply install it using pip install tool.
-	```sudo pip install lettuce
-	sudo pip install nose```
+	```sudo pip install lettuce'''
+	'''sudo pip install nose```
 
 3. Fork this repo and clone it on your local machine. 
 
