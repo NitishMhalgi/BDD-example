@@ -13,14 +13,27 @@ def select_calc(step):
 def given_i_input_group1_add_group1(step, x, y):
     world.result = world.calc.add(int(x), int(y))
  
- 
+
+@step(u'I input "([^"]*)" subtract "([^"]*)"')
+def given_i_input_group1_add_group1(step, x, y):
+    world.result = world.calc.subtract(int(x), int(y))
+
+
+@step(u'I input "([^"]*)" multiply "([^"]*)"')
+def given_i_input_group1_add_group1(step, x, y):
+    world.result = world.calc.multiply(int(x), int(y))
+
+
+@step(u'I input "([^"]*)" divide "([^"]*)"')
+def given_i_input_group1_add_group1(step, x, y):
+    world.result = world.calc.divide(int(x), int(y))
+
+
 @step(u'I should see "([^"]+)"')
 def result(step, expected_result):
     actual_result = world.result
     assert_equals(int(expected_result), actual_result)
 
 
-@step(u'I input "([^"]*)" subtract "([^"]*)"')
-def given_i_input_group1_add_group1(step, x, y):
-    world.result = world.calc.subtract(int(x), int(y))
+
 
