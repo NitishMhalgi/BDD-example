@@ -1,17 +1,22 @@
 ## INSTRUCTIONS
 
-1. Make sure python is installed on your machine. 
+1. Make sure Python 2.7 is installed on your machine.
 
 2. Install the Lettuce library and nose toolkit for Python. (These are Python-based tools for Behavior Driven development.)
 	For Mac & Linux: You can simply install it using pip install tool.
-	```sudo pip install lettuce'''
-	'''sudo pip install nose```
+	```sudo pip install lettuce```
+	```sudo pip install nose```
+	
+	For Windows, use this tutorial:
+	http://www.erlisvidal.com/2010/10/how-install-lettuce-windows.html
+	You may need to install easy_install first.
+	Once lettuce is installed, do ```pip install nose```.
 
 3. Fork this repo and clone it on your local machine. 
 
 4. You can test any feature by navigating to the directory of the repo, and then using:
 	```lettuce tests/features/feature_name.feature```
-
+	
 ### Example:
 ```
 nitish@nitish-VirtualBox:~/Desktop/BDD-Example$ lettuce tests/features/calculator_add.feature 
