@@ -8,15 +8,17 @@
 	```sudo pip install lettuce```
 	```sudo pip install nose```
 	
-	For Windows, we will use easy_install (a Python module which is bundled with setuptools that lets you automatically download, build, install, and manage Python packages) to get lettuce and nose.
+	For Windows: You can use easy_install (a Python module that can automatically download, build, install, and manage Python packages) to get lettuce and nose. For more information, refer to the following link: https://pypi.python.org/pypi/setuptools
+	
 	To check if you have the easy_install module, execute the following command ```easy_install --version```. You should get something similar to the below output:
+	
 		setuptools 18.5 from c:\python27\lib\site-packages\setuptools-18.5-py2.7.egg (Python 2.7)
 	
 	Install easy_install (if you do not have this module):
-	1. Download ez_setup.py [https://bootstrap.pypa.io/ez_setup.py]
-    2. Run ex_setup.py using ```python ez_setup.py```
+	1. Download ez_setup.py from here: https://bootstrap.pypa.io/ez_setup.py
+    2. Run ez_setup.py using ```python ez_setup.py```
 	3. Ensure that you have the following entries in your PATH variable: C:\Python27\Scripts;C:\Python27 (or pointing to your python folder) 
-		NOTE: You may need to re-open command prompt for changes to take effect.
+		1. NOTE: You may need to re-open command prompt for changes to take effect.	
 	4. Verify executing ```easy_install --version``` gives some output like mentioned above
 	
 	Install lettuce and nose:
@@ -24,6 +26,7 @@
 	```easy_install nose```
 	
 	The above steps were adapted from the following tutorial for reference:
+	
 	http://www.erlisvidal.com/2010/10/how-install-lettuce-windows.html
 
 3. Fork this repo and clone it on your local machine. 
