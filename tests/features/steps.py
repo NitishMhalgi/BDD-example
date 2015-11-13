@@ -42,9 +42,10 @@ def step_for_factorial(step, x):
 @step(u'I should see "([^"]+)"')
 def result(step, expected_result):
     actual_result = world.result
-	if(expected_result=="None"):
-		expected_result=None
-    assert_equals(int(expected_result), actual_result)
+    if(expected_result=="None"):
+		assert(actual_result is None)
+    else:
+		assert_equals(int(expected_result), actual_result)
 
 
 

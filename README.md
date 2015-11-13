@@ -62,7 +62,9 @@ Feature: Acceptance Test for the                 # tests/features/calculator_add
 
 You will be adding two functions to our calculator program: one that calculates the volume of a rectangular prism (length x width x height) given three input integers, and one that calculates the factorial of a single input integer.
 
-1. In the tests/features directory, create .feature files for calculator_factorial and calculator_volume, using the format provided by the calculator_add.feature and calculator_subtract examples. For each feature file, create both a scenario and a scenario outline with at least three sets of inputs. (Don't worry about negative numbers when testing the volume.)
+1. In the tests/features directory, create .feature files for calculator_factorial and calculator_volume, using the format provided by the calculator_add.feature and calculator_subtract examples. For each feature file, create both a scenario and a scenario outline with at least three sets of inputs.
+	-Don't worry about negative numbers when testing volume or factorial.
+	-If you want to try taking the factorial a negative number, the expected output should be None.
 
 2. Open the steps.py file and add the corresponding volume and factorial test functions. Hint: the phrasing must match your feature file exactly.
 
