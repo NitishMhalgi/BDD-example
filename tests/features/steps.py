@@ -10,22 +10,22 @@ def select_calc(step):
  
  
 @step(u'I input "([^"]*)" add "([^"]*)"')
-def given_i_input_group1_add_group1(step, x, y):
+def step_for_add(step, x, y):
     world.result = world.calc.add(int(x), int(y))
  
 
 @step(u'I input "([^"]*)" subtract "([^"]*)"')
-def given_i_input_group1_add_group1(step, x, y):
+def step_for_subtract(step, x, y):
     world.result = world.calc.subtract(int(x), int(y))
 
 
 @step(u'I input "([^"]*)" multiply "([^"]*)"')
-def given_i_input_group1_add_group1(step, x, y):
+def step_for_mutiply(step, x, y):
     world.result = world.calc.multiply(int(x), int(y))
 
 
 @step(u'I input "([^"]*)" divide "([^"]*)"')
-def given_i_input_group1_add_group1(step, x, y):
+def step_for_divide(step, x, y):
     world.result = world.calc.divide(int(x), int(y))
 
 
