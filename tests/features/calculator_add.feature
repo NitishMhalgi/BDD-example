@@ -1,7 +1,7 @@
 Feature: Acceptance Test for the
   add() function of Calculator
  
-    Scenario: Calculate 2 plus 2 on our calculator
+  Scenario: Calculate 2 plus 2 on our calculator
     Given I am using the calculator
 	When I input "2" add "2"
     Then I should see "4"
@@ -17,5 +17,3 @@ Feature: Acceptance Test for the
     | 0      | 1      | 1      |
     | 1      | -1     | 0      |
     | 2      | 2      | 4      |
-    | 3      | 7      | 10     |
-    | 4      | 12     | 16     |
