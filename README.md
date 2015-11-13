@@ -7,7 +7,7 @@
 2. Install the Lettuce library and nose toolkit for Python. (These are Python-based tools for Behavior Driven development.)
 	
 	For Mac & Linux: You can simply install it using pip install tool.  
-	```sudo pip install lettuce```
+	```sudo pip install lettuce```  
 	```sudo pip install nose```
 	
 	For Windows: You can use easy_install (a Python module that can automatically download, build, install, and manage Python packages) to get lettuce and nose. For more information, refer to the following link: https://pypi.python.org/pypi/setuptools
@@ -24,7 +24,7 @@
 	4. Verify executing ```easy_install --version``` gives some output like mentioned above
 	
 	Install lettuce and nose:
-	```easy_install lettuce ```
+	```easy_install lettuce ```  
 	```easy_install nose```
 	
 	The above steps were adapted from the following tutorial for reference:
