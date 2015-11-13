@@ -30,3 +30,11 @@ class Calculator(object):
             return x / y
         else:
             raise ValueError
+
+    def volume(self, l, h, b):
+        number_types = (int, long, float, complex)
+ 
+        if isinstance(l, number_types) and isinstance(h, number_types) and isinstance(b, number_types):
+            return l*h*b
+        else:
+            raise ValueError

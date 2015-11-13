@@ -1,4 +1,4 @@
-Feature: cceptance Test for the
+Feature: Acceptance Test for the
   subtract() function of Calculator
  
   Background:
