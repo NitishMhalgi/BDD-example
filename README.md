@@ -1,5 +1,7 @@
 ## INSTRUCTIONS
 
+###Setup
+
 1. Make sure Python 2.7 is installed on your machine.
 
 2. Install the Lettuce library and nose toolkit for Python. (These are Python-based tools for Behavior Driven development.)
@@ -56,5 +58,16 @@ Feature: Acceptance Test for the                 # tests/features/calculator_add
 2 steps (2 passed)
 ```
 
+###Assignment
 
+You will be adding two functions to our calculator program: one that calculates the volume of a rectangular prism (length x width x height) given three input integers, and one that calculates the factorial of a single input integer.
 
+1. In the tests/features directory, create .feature files for calculator_factorial and calculator_volume, using the format provided by calculator_add.feature and other examples.
+
+2. Open the steps.py file and add the corresponding volume and factorial test functions. Hint: the phrasing must match your feature file exactly.
+
+3. Run your tests using ```lettuce tests/features/calculator_volume.feature``` and ```lettuce tests/features/calculator_factorial.feature```. The tests should fail.
+
+4. In the app directory, open calculator.py and implement the volume and factorial functions.
+
+5. Run the two feature tests again. This time, they should pass.
