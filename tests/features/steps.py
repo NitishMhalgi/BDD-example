@@ -5,7 +5,7 @@ from app.calculator import Calculator
  
 @step(u'I am using the calculator')
 def select_calc(step):
-    print ('Attempting to use calculator...')
+#    print ('Attempting to use calculator...')
     world.calc = Calculator()
  
  
@@ -42,6 +42,8 @@ def step_for_factorial(step, x):
 @step(u'I should see "([^"]+)"')
 def result(step, expected_result):
     actual_result = world.result
+	if(expected_result=="None"):
+		expected_result=None
     assert_equals(int(expected_result), actual_result)
 
 
