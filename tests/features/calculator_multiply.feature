@@ -13,7 +13,7 @@ Feature: Acceptance Test for the
     Then I should see "12"
 	
   Scenario Outline: Multiply two numbers on our calculator
-	Given I input "<input1>" multiply "<input2>"
+    Given I input "<input1>" multiply "<input2>"
     Then I should see "<output>"
 
   Examples:

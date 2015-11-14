@@ -3,12 +3,12 @@ Feature: Acceptance Test for the
  
   Scenario: Calculate factorial of 3 on our calculator
     Given I am using the calculator
-	When I input factorial "3"
+    When I input factorial "3"
     Then I should see "6"
  
   Scenario Outline: Find the factorial of a number
     Given I am using the calculator
-	When I input factorial "<input>"
+    When I input factorial "<input>"
     Then I should see "<output>"
 
   Examples:

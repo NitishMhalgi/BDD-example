@@ -14,19 +14,9 @@ def step_for_add(step, x, y):
     world.result = world.calc.add(int(x), int(y))
  
 
-@step(u'I input "([^"]*)" subtract "([^"]*)"')
-def step_for_subtract(step, x, y):
-    world.result = world.calc.subtract(int(x), int(y))
-
-
 @step(u'I input "([^"]*)" multiply "([^"]*)"')
 def step_for_mutiply(step, x, y):
     world.result = world.calc.multiply(int(x), int(y))
-
-
-@step(u'I input "([^"]*)" divide "([^"]*)"')
-def step_for_divide(step, x, y):
-    world.result = world.calc.divide(int(x), int(y))
 	
 	
 @step(u'I input "([^"]*)", "([^"]*)", and "([^"]*)"')
@@ -36,16 +26,16 @@ def step_for_volume(step, x, y, z):
 	
 @step(u'I input factorial "([^"]*)"')
 def step_for_factorial(step, x):
-	world.result = world.calc.factorial(int(x))
+    world.result = world.calc.factorial(int(x))
 
 	
 @step(u'I should see "([^"]+)"')
 def result(step, expected_result):
     actual_result = world.result
     if(expected_result=="None"):
-		assert(actual_result is None)
+        assert(actual_result is None)
     else:
-		assert_equals(int(expected_result), actual_result)
+        assert_equals(int(expected_result), actual_result)
 
 
 
